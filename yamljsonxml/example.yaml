@@ -1,0 +1,17 @@
+---
+NFVBENCH:
+  enabled: true
+  tor_info: {bspcl-nfvi2-n9k-1: eth1/10, bspcl-nfvi2-n9k-2: eth1/10}
+NFV_HOSTS: ALL
+NOVA_BOOT_FROM: ceph
+OPTIONAL_SERVICE_LIST: [heat, ceilometer, lbaas]
+PODNAME: bspcl-nfvi2
+PROVIDER_VLAN_RANGES: '40:49'
+REGISTRY_EMAIL: test@test.com
+REGISTRY_PASSWORD: tester123
+REGISTRY_USERNAME: test
+ROLES:
+  block_storage: [storage-server-1, storage-server-2, storage-server-3]
+  compute: [compute-server-1, compute-server-2]
+  control: [control-server-1, control-server-2, control-server-3]
+...
